@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="285dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="HELLO, WELCOME TO THE LIFE HACK OR URBAN MYTH VERIFIER APP !"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="283dp"
+        android:layout_height="321dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="64dp"
+        android:text="Welcome to the Life Hack or Urban Myth Verifier App. A flashcard game designed to test your common sense and help you learn useful, safe real-world shortcuts. Can you separate the genuine life hacks from the viral urban myths? Tap the START QUIZ button below to begin your challenge!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="139dp"
+        android:text="START QUIZ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
