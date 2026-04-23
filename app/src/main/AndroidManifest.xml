@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LifeHackOrUrbanMythVerifierApp">
         <activity
+            android:name=".ScoreScreen1"
+            android:exported="false" />
+        <activity
             android:name=".ScoreScreen"
             android:exported="false" />
         <activity
