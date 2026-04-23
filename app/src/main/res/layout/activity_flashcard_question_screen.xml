@@ -5,44 +5,54 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#32C8DB"
     tools:context=".FlashcardQuestionScreen">
 
     <TextView
         android:id="@+id/txtScore"
-        android:layout_width="109dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="168dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
         android:text="Score"
-        android:textSize="20sp"
+        android:textColor="#9C27B0"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtQuestion"
-        android:layout_width="348dp"
-        android:layout_height="351dp"
+        android:layout_width="337dp"
+        android:layout_height="247dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="32dp"
+        android:gravity="center"
         android:text="QUESTIONS WILL APPEAR HERE"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtScore" />
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="39dp"
-        android:text="NEXT"
+        android:layout_width="156dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="108dp"
+        android:background="#E91E63"
+        android:text="NEXT ➡️"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rgChoices" />
 
     <RadioGroup
         android:id="@+id/rgChoices"
-        android:layout_width="336dp"
-        android:layout_height="133dp"
+        android:layout_width="335dp"
+        android:layout_height="148dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="27dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,12 +62,54 @@
             android:id="@+id/rbHack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LIFE HACK" />
+            android:background="#4CAF50"
+            android:backgroundTint="#4CAF50"
+            android:text="LIFE HACK (TRUE) ✅"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/rbMyth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="URBAN MYTH" />
+            android:background="#D1D9062C"
+            android:text="URBAN MYTH (FALSE) 👻 "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="33dp"
+        android:background="#E91E63"
+        app:layout_constraintStart_toEndOf="@+id/txtScore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outline_award_star_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="74dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="37dp"
+        android:background="#FFEB3B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outline_child_hat_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="228dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="15dp"
+        android:background="#FFC107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgChoices"
+        app:srcCompat="@drawable/outline_electric_bolt_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
