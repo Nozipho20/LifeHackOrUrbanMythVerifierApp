@@ -43,6 +43,7 @@
         android:layout_marginStart="136dp"
         android:layout_marginTop="108dp"
         android:background="#E91E63"
+        android:backgroundTint="#E91E63"
         android:text="NEXT ➡️"
         android:textSize="20sp"
         android:textStyle="bold|italic"
