@@ -25,21 +25,21 @@ class WelcomeScreen : AppCompatActivity() {
         txtWelcome = findViewById(R.id.txtWelcome)
         txtDescription = findViewById(R.id.txtDescription)
 
-        // LOG: Confirms screen initialization
+        // This log that is created here confirms the screen initialization
         Log.d("LifeHackVerify", "MainActivity: Welcome screen loaded successfully.")
 
         btnStart.setOnClickListener {
-            // LOG: Shows the button interaction in Logcat
+            // This log shows the button interaction in Logcat
             Log.d("LifeHackVerify", "User clicked btnStart. Preparing to navigate.")
 
-            // Toast feedback for the user
-            Toast.makeText(this, "Loading your 14 cards... Good luck!", Toast.LENGTH_SHORT).show()
+            //This is thr Toast feedback for the user
+            Toast.makeText(this, "Loading your 10 cards... Good luck!", Toast.LENGTH_SHORT).show()
 
-            // Intent logic to move to the second screen
+            //The Intent logic created so we can move and navigate to the second screen
             val intent = Intent(this, FlashcardQuestionScreen ::class.java)
             startActivity(intent)
 
-            // LOG: Confirms successful navigation
+            // This Log confirms the successful navigation to the Question Screen
             Log.i("Navigation", "Output: Moving to the Question Screen.")
 
 
