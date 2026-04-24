@@ -26,21 +26,21 @@ class WelcomeScreen : AppCompatActivity() {
         txtDescription = findViewById(R.id.txtDescription)
 
         // This log that is created here confirms the screen initialization
-        Log.d("LifeHackVerify", "MainActivity: Welcome screen loaded successfully.")
+        Log.d("LifeHackVerify", "MainActivity: Welcome screen loaded successfully.")     // Reference: [1]
 
         btnStart.setOnClickListener {
             // This log shows the button interaction in Logcat
-            Log.d("LifeHackVerify", "User clicked btnStart. Preparing to navigate.")
+            Log.d("LifeHackVerify", "User clicked btnStart. Preparing to navigate.")     // Reference: [1]
 
             //This is the toast for the user
-            Toast.makeText(this, "Loading your 10 cards... Good luck!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Loading your 10 cards... Good luck!", Toast.LENGTH_SHORT).show()     // Reference: [2]
 
             //The Intent logic created so we can move and navigate to the second screen
             val intent = Intent(this, FlashcardQuestionScreen ::class.java)
             startActivity(intent)
 
             // This Log confirms the successful navigation to the Question Screen
-            Log.i("Navigation", "Output: Moving to the Question Screen.")
+            Log.i("Navigation", "Output: Moving to the Question Screen.")         // Reference: [1]
 
 
 
@@ -58,3 +58,7 @@ class WelcomeScreen : AppCompatActivity() {
         }
     }
 }}
+
+// Reference list
+// [1] The Independent Institute of Education, 2026. Introduction to mobile application and web development [IMAD5112]. nt. [online via internal VLE] The Independent Institute of Education. Available at: <Learning Unit 5: Arrays – IMAD5112: Introduction to mobile application and web development> [Accessed Date 23 April 2025].
+// [2] Android Developers, 2024. Toasts overview. [online] Available at: https://developer.android.com/guide/topics/ui/notifiers/toasts [Accessed 21 March 2026].

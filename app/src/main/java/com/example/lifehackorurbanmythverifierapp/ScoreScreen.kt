@@ -33,7 +33,7 @@ class ScoreScreen : AppCompatActivity() {
         Log.i("Navigation", "ScoreScreen opened. Final score received: $intScore")
 
         // This Toast will pop up after the results are being calculated
-        Toast.makeText(this, "Calculating results...", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Calculating results...", Toast.LENGTH_SHORT).show() // Reference: [2]
 
         // This is the Score Display that is Tracking and showing the score
         txtFinalScore.text = "Final Result: $intScore / 10"
@@ -43,20 +43,20 @@ class ScoreScreen : AppCompatActivity() {
         // I lso utilized logs through out of the if else logic to track everything
         if (intScore >= 8) {
             txtFeedback.text = "Master Hacker! You're an expert at spotting the truth."
-            Log.d("FeedbackLogic", "High score message displayed.")
+            Log.d("FeedbackLogic", "High score message displayed.")           // Reference: [1]
 
         } else if (intScore >= 5) {
             txtFeedback.text = "Great job! You have a solid eye for myths."
             Log.d("FeedbackLogic", "Medium score message displayed.")
         } else {
             txtFeedback.text = "Stay Safe Online! Keep practising your verification skills."
-            Log.d("FeedbackLogic", "Low score message displayed.")
+            Log.d("FeedbackLogic", "Low score message displayed.")         // Reference: [1]
         }
 
         //The Review button logic allows users to review all questions and their correct answers
 
         btnReview.setOnClickListener {
-            Log.i("UI_Action", "User clicked Review. Showing explanations.")
+            Log.i("UI_Action", "User clicked Review. Showing explanations.")     // Reference: [1]
 
             // We are Using a StringBuilder to build the list line by line professionally ans prove answers
             val builder = StringBuilder()
@@ -88,3 +88,9 @@ class ScoreScreen : AppCompatActivity() {
             startActivity(intentRestart)
             finish()
         }}}
+//Reference list
+// [1]Smartherd, 2016. #12 Android LogCat tutorial: Android Studio part – 2. [video online] Available at: https://youtu.be/QqjrR11tuz0?si=ODGvGgObkT_5oyxu [Accessed 21 March 2026]. Kotlin Docs, 2024. Control flow: if, when, for, while. [online] Available at: https://kotlinlang.org/docs/control-flow.html [Accessed 21 March 2026].
+
+// [2]Android Developers, 2024. Toasts overview. [online] Available at: https://developer.android.com/guide/topics/ui/notifiers/toasts [Accessed 21 March 2026].
+
+//[3] Android Developers, 2024. Buttons. [online] Available at: https://developer.android.com/develop/ui/views/components/button [Accessed 21 March 2026].

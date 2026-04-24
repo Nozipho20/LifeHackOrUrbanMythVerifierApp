@@ -32,7 +32,7 @@ class FlashcardQuestionScreen : AppCompatActivity() {
         "2.Freezing a candle before use makes it burn slower and last longer",
         "3.Putting dry tea bags in smelly shoes removes odour",
         "4.Rubbing a stainless steel surface with olive oil removes fingerprints",
-        "5.Putting a wooden spoon across a boiling pot stops it from boiling over",
+        "5.Putting a wooden spoon across a boiling pot stops it from boiling over",        // Referencece: [1]
         "6.Cracking your knuckles causes arthritis",
         "7.Swallowed gum stays in your stomach for 7 years",
         "8.Eating carrots improves your night vision",
@@ -80,7 +80,7 @@ class FlashcardQuestionScreen : AppCompatActivity() {
                 // This indicates Scoring Logic and Feedback using intIndex
                 if (userSelection == arrAnswers[intIndex]) {
                     intScore++
-                    Toast.makeText(this, "Correct! Well done.", Toast.LENGTH_SHORT).show()   //Use toast to give remarks
+                    Toast.makeText(this, "Correct! Well done.", Toast.LENGTH_SHORT).show()   //Use toast to give remarks   // Reference: [2]
                     Log.d("QuizProgress", "Correct selection at index $intIndex. New Score: $intScore")
                 } else {
                     Toast.makeText(this, "Wrong! Better luck next time.", Toast.LENGTH_SHORT).show()
@@ -107,6 +107,9 @@ class FlashcardQuestionScreen : AppCompatActivity() {
                 }
             }
         }}}
+// Reference list
+// [1] The Independent Institute of Education, 2026. Introduction to mobile application and web development [IMAD5112]. nt. [online via internal VLE] The Independent Institute of Education. Available at: <Learning Unit 5: Arrays – IMAD5112: Introduction to mobile application and web development> [Accessed Date 23 April 2025].
+// [2] Android Developers, 2024. Toasts overview. [online] Available at: https://developer.android.com/guide/topics/ui/notifiers/toasts [Accessed 21 March 2026].
 
 
 
