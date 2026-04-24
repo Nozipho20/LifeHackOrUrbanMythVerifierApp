@@ -32,7 +32,7 @@ class WelcomeScreen : AppCompatActivity() {
             // This log shows the button interaction in Logcat
             Log.d("LifeHackVerify", "User clicked btnStart. Preparing to navigate.")
 
-            //This is thr Toast feedback for the user
+            //This is the toast for the user
             Toast.makeText(this, "Loading your 10 cards... Good luck!", Toast.LENGTH_SHORT).show()
 
             //The Intent logic created so we can move and navigate to the second screen

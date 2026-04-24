@@ -66,7 +66,7 @@ class FlashcardQuestionScreen : AppCompatActivity() {
         Log.d("QuizLoop", "App started. Displaying question at index 0")
 
         btnNext.setOnClickListener {
-            // This logic Gets the selected RadioButton ID from the group
+            // This logic Gets the selected RadioButton ID from the from the Radio Group
             val selectedId = rgChoices.checkedRadioButtonId
 
             if (selectedId == -1) {

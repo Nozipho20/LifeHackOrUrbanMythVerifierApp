@@ -57,7 +57,7 @@
         android:layout_height="67dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#BF124D"
+        android:backgroundTint="#9C27B0"
         android:text="RESTART 🔄"
         android:textColor="@color/white"
         android:textSize="16sp"
